@@ -1,0 +1,12 @@
+{
+  "python_executable": "",
+  "codex_executable": "",
+  "backend": "codex",
+  "claude_executable": "",
+  "deepseek_harness_executable": "",
+  "backend_models": {},
+  "model": "",
+  "timeout_seconds": 600,
+  "first_output_timeout_seconds": 120,
+  "idle_timeout_seconds": 90
+}

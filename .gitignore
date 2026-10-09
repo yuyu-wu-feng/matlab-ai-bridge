@@ -1,0 +1,7 @@
+__pycache__/
+output/
+*.asv
+config.local.json
+config.local.json.*.tmp
+dist/
+.pytest_cache/

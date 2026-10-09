@@ -1,0 +1,13 @@
+function config = ai_backend_config(config)
+% Fill legacy configuration without changing previously saved choices.
+defaults=struct('backend','codex','model','', ...
+    'codex_executable','','claude_executable','','deepseek_harness_executable','', ...
+    'timeout_seconds',60,'first_output_timeout_seconds',25,'idle_timeout_seconds',20, ...
+    'backend_models',struct);
+names=fieldnames(defaults);
+for k=1:numel(names)
+    if ~isfield(config,names{k}), config.(names{k})=defaults.(names{k}); end
+end
+assert(ismember(config.backend,{'codex','claude','deepseek_harness'}), ...
+    'MatlabAI:Configuration','不支持配置中的 Agent。');
+end

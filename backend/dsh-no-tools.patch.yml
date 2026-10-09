@@ -1,0 +1,11 @@
+# Applied last, to an isolated sdk-minimal profile/home only.
+- id: persistent-bash
+  disabled: true
+- id: persistent-pwsh
+  disabled: true
+- id: mcp-resources
+  disabled: true
+- id: terminal-bash
+  disabled: true
+- id: terminal-pwsh
+  disabled: true
